@@ -15,7 +15,7 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    
+
 }
 
 h2 {
@@ -29,7 +29,7 @@ h2 {
     margin-bottom: 26px;
 }
 
-input {
+.box-input input {
     width: 342px;
     align-items: center;
     border-radius: 14px;
@@ -42,6 +42,27 @@ input {
     width: 342px;
     padding-left: 20px;
     opacity: 0.7;
+}
+
+.result {
+    height: 64px;
+    width: 242px;
+    margin: 20px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    opacity: 0.6;
+    align-items: center;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.25);
+    color: #FFF;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .input-min {
@@ -70,4 +91,9 @@ button:hover {
 
 button:active {
     opacity: 0.8;
+}
+
+img {
+    height: 274px;
+    margin-top: 56px;
 }
