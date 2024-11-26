@@ -25,12 +25,10 @@ h2 {
     font-weight: 400;
     line-height: 38px;
     text-align: center;
-    margin-top: 126px;
-    margin-bottom: 26px;
+    margin: 126px 0 20px;
 }
 
 .box-input input {
-    width: 342px;
     align-items: center;
     border-radius: 14px;
     border: 1px solid rgba(255, 255, 255, 0.20);
@@ -70,7 +68,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 button {
-    background: #AEC346;
+    background: #71850d;
     box-shadow: 0px 18px 40px 0px rgba(174, 195, 70, 0.35);
     border-radius: 10px;
     width: 342px;
@@ -78,11 +76,11 @@ button {
     color: #FFF;
     font-weight: 700;
     font-size: 36px;
-    margin-top: 80px;
     border: none;
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    margin: 39px 0 187px;
 }
 
 button:hover {
@@ -96,4 +94,70 @@ button:active {
 img {
     height: 274px;
     margin-top: 56px;
+}
+
+@media screen and (max-width: 766px) {
+
+    .box-input input {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        height: 74px;
+        width: 342px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .result {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        height: 74px;
+        width: 342px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-right: 80px;
+    }
+
+    img {
+        height: 174px;
+        margin-right: 69px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-right: 73px;
+    }
+
+    button {
+        font-size: 24px;
+        opacity: ;
+        margin-right: 73px;
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 375px)  and (max-width: 844px) {
+    img {
+        margin-right: 3px;
+    }
+
+    h2 {
+        margin-right: 24px;
+    }
+
+    .box-input input {
+        margin-right: 6px;
+    }
+
+    .result {
+        margin-right: 28px;
+    }
+
+    button {
+        margin-right: 5px;
+    }
 }
